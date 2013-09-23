@@ -51,4 +51,19 @@ describe("Testing library", function() {
 		}, 3000);
 	});
 
+	it("Should loop", function(done) {
+		var value = 0;
+		queue()(100)(function() {
+			value += 1;
+		})(100)(function() {
+			value += 1;
+		})(100)(function() {
+			value += 1;
+		})("loop")();
+		setTimeout(function() {
+			expect(value).toBe(9);
+			done();
+		}, 1010);
+	})
+
 });
