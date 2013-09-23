@@ -1,4 +1,3 @@
-queue
-=====
+# Yet another JavaScript queue library
 
-Short JavaScript implementation of queue
+I'm currently working on an animation-heavy web application 
