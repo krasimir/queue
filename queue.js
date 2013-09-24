@@ -8,9 +8,7 @@ var queue = function() {
 			var item = queueElements.shift();
 			if(flags.stop !== true) {
 				if(isNumber(item)) { // delay
-					interval = setTimeout(function() {
-						api();
-					}, item);
+					interval = setTimeout(api, item);
 				} else if(typeof item === 'function') { // functions
 					item();
 					api();

@@ -64,6 +64,6 @@ describe("Testing library", function() {
 			expect(value).toBe(9);
 			done();
 		}, 1010);
-	})
+	});
 
 });
