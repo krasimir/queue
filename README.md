@@ -18,7 +18,7 @@ Construct a chain of functions:
 	})
 	(); // running the queue
 
-If may stop the execution of the queue:
+You may stop the execution of the queue:
 
 	var q = queue()
 	(function() {
